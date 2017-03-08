@@ -1,10 +1,6 @@
 $(document).ready(function () {
     "use strict";
-    try {
-        
-        var $buythemediv = '<div class="buy-theme xs-display-none"><a href="http://themeforest.net/item/mee-responsive-resume-personal-portfolio/8777018?ref=themezaa" target="_blank"><span>Purchase Theme</span></a></div>';
-        $('body').append($buythemediv);
-    
+    try {    
         /* ==========================================================================
          #PieChart For Skills Page
          ========================================================================== */
