@@ -7,30 +7,35 @@
                 databaseURL: "https://resume-2871d.firebaseio.com",
                 storageBucket: "resume-2871d.appspot.com",
                 messagingSenderId: "860759626833"
-            }
+            },
+            pageData: null
         },
         register: function () {
             main.helper.loadOctapushPlugins(function () {
                 firebase.initializeApp(main.settings.fb);
-                main.helper.fb.contact();
-                //console.log(main.helper.fb.contact());
+                main.helper.fbFetch.pages();
             });
         },
-        ui: {},
-        events: {},
+        ui: {
+
+        },
+        events: {
+
+        },
         helper: {
             loadOctapushPlugins: function (callback) {
                 _o_.settings.pluginsPath = 'resources/js/octapushJS/plugins/';
                 _o_.utility.importPlugin('string', callback);
             },
             fbFetch: {
-                contact: function () {
+                pages: function (callback) {
                     firebase
                         .database()
                         .ref()
                         .once('value')
                         .then(function(data) {
-                            console.log(data.val());
+                            main.settings.pageData = data.val();
+                            if (callback) callback(data.val());
                         });
                 }
             }
