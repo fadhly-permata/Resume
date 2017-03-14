@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for http://www.fadhly.hol.es/</title>
+  <link>http://www.fadhly.hol.es/</link>
+
+<item>
+     <link>http://www.fadhly.hol.es/</link>
+     <title>Fadhly Permata - Curriculum Vitae</title>
+     <description>Fadhly Permata - Curriculum Vitae</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
